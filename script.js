@@ -30,8 +30,12 @@ addTodo.addEventListener('submit', e => {
 addTodo.addEventListener('click', e => {
     const todo = addTodo.addnewtodo.value.trim();
     if(e.target.classList.contains('fa-circle-plus')){
-        creatTodoElement(todo);
-        addTodo.reset();
+        if(todo === ''){
+            alert('please type out something first');
+        }else {
+            creatTodoElement(todo);
+            addTodo.reset();
+        }
     }
 });
 //removing Todos
