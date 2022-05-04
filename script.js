@@ -26,6 +26,14 @@ addTodo.addEventListener('submit', e => {
     }
     
 });
+//add new to do when click + sign
+addTodo.addEventListener('click', e => {
+    const todo = addTodo.addnewtodo.value.trim();
+    if(e.target.classList.contains('fa-circle-plus')){
+        creatTodoElement(todo);
+        addTodo.reset();
+    }
+});
 //removing Todos
 todosUl.addEventListener('click', e => {
     if(e.target.classList.contains('delete')){

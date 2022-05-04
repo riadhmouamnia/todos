@@ -14,6 +14,25 @@ input[type=text]:focus {
   max-width: 350px;
 }
 
+.addtodo li {
+  background: rgba(0, 0, 0, 0.212);
+  border-radius: 0.3em;
+  height: 36px;
+  max-width: 350px;
+}
+.addtodo li input ,
+.addtodo li input:focus
+{
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  flex: 1 1 0%;
+}
+
+.addtodo li i {
+  cursor: pointer;
+}
 
 .todos li {
   background: #1c2e4a;
